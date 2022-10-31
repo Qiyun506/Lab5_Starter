@@ -28,5 +28,5 @@ function init() {
     say.addEventListener('end', (event) => {
       img.src = 'assets/images/smiling.png';
     });
-  })
+  }) 
 }
