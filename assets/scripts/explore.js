@@ -24,7 +24,7 @@ function init() {
     const option = selections.selectedOptions[0].getAttribute('voice_idx');
     say.voice = voice_list[option];
     syn.speak(say);
-    if (say.text != '') img.src = 'assets/images/smiling-open.png';
+    if (say.txt != '') img.src = 'assets/images/smiling-open.png';
     say.addEventListener('end', (event) => {
       img.src = 'assets/images/smiling.png';
     });
