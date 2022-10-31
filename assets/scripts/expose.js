@@ -19,7 +19,7 @@ function init() {
     if (horn.value == 'party-horn'){
       JC.addConfetti();
     }
-    aud.play();
+    sound.play();
   });
   VC.addEventListener('change', (event) => {
     let curr = event.target.value;
