@@ -6,7 +6,7 @@ function init() {
   const syn = window.window.speechSynthesis;
   const img = document.querySelector('img');
   const button = document.querySelector('button');
-  const selections = = document.getElementById('voice-select');
+  const selections = document.getElementById('voice-select');
 //-------------declarations-------------------------
   var voice_list = [];
   syn.addEventListener('voiceschanged', () => {
