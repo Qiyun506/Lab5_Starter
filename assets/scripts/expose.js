@@ -30,6 +30,6 @@ function init() {
     else vol_lv = 3;
     const icon = vol_control.querySelector('img');
     icon.src = `assets/icons/volume-level-${vol_lv}.svg`
-    aud.volume = curr  / 100.0;
+    sound.volume = curr  / 100.0;
   })
 }
