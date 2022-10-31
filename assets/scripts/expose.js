@@ -11,7 +11,7 @@ function init() {
   const VC = document.getElementById('volume-controls');
 //-------------------------------declare----------------------------------------
   const JC = new JSConfetti();
-  horn.addEventListener()('change', (event) => {
+  horn.addEventListener('change', (event) => {
     pic.src = `assets/images/${event.target.value}.svg`;
     sound.src = `assets/audio/${event.target.value}.mp3`;
   });
