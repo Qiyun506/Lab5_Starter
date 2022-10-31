@@ -28,7 +28,7 @@ function init() {
     else if (curr  < 34) vol_lv = 1
     else if (curr  < 66) vol_lv = 2
     else vol_lv = 3;
-    const icon = vol_control.querySelector('img');
+    const icon = VC.querySelector('img');
     icon.src = `assets/icons/volume-level-${vol_lv}.svg`
     sound.volume = curr  / 100.0;
   })
