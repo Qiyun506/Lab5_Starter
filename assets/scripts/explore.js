@@ -15,13 +15,13 @@ function init() {
       const option = document.createElement('option');
       option.textContent = `${voice_list[i].name} (${voice_list[i].lang})`;
       option.setAttribute('voice_idx', i);
-      voice_select.appendChild(option);
+      selections.appendChild(option);
     }
   });
    button.addEventListener('click', () => {
     var txt = document.getElementById('text-to-speak').value;
     var say = new SpeechSynthesisUtterance(txt);
-    const option = voice_select.selectedOptions[0].getAttribute('voice_idx');
+    const option = selections.selectedOptions[0].getAttribute('voice_idx');
     say.voice = voice_list[option];
     syn.speak(say);
     if (say.text != '') img.src = 'assets/images/smiling-open.png';
